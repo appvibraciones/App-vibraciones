@@ -1,0 +1,64 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0 50px;
+    background-color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+  }
+  .spam{
+    color: red;
+  }
+  .green{
+color: green;
+  }
+  #output-section > .green{
+    color: green;
+  }
+  
+  .logo{
+    width: 100px;
+
+  }
+
+  #output-section > h2{
+
+    color: red;
+  } 
+  #simulation{
+    height: 200px;
+     width: 200px;
+     display: inline block;
+    position: relative;
+    top:50px;
+    left: 45%;
+     background-color: blue;
+  }
+
+  #input-section {
+    flex-direction: row;
+    position: relative;
+    top: 200px;
+    font-size: 20px;
+    
+}
+
+#output-section {
+    flex-direction: row;
+    position: absolute;
+    top: 750px;
+}
+
+/* Media query para pantallas de hasta 768px (móviles y tablets) */
+@media (max-width: 768px) {
+    #input-section {
+        flex-direction: column;  
+        top: 100px; 
+    }
+    #output-section {
+        flex-direction: column;  
+        position: relative;  
+        top: 150px;  
+    }
+}
+

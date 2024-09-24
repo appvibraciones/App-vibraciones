@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/stylePendulo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img class="logo" src="https://th.bing.com/th/id/OIP.2Da70h6obawYeNmyF5EyfQHaEH?rs=1&pid=ImgDetMain" alt="logo">
+    <h1>Simulación de un <span class="spam, green"> Péndulo Físico</span> movimiento amortiguado</h1>
+    <div id="simulation">
+
+        
+
+    </div>
+    <!-- Sección de entrada de datos -->
+    <div id="input-section">
+        <label for="theta0"><b>Ángulo Inicial</b> (θ₀ en radianes):</label>
+        <input type="number" id="theta0" step="0.01" value="0.01">
+
+        <label for="thetaDot0"><b>Velocidad Angular Inicial</b> (θ̇₀ en rad/s):</label>
+        <input type="number" id="thetaDot0" step="0.01" value="0.1">
+
+        <!-- Nueva entrada para la masa de la barra -->
+        <label for="masaBarra"><b>Masa de la Barra</b> (kg):</label>
+        <input type="number" id="masaBarra" step="0.01" value="1">
+
+        <!-- Nueva entrada para la masa de la esfera -->
+        <label for="masaEsfera"><b>Masa de la Esfera</b> (kg):</label>
+        <input type="number" id="masaEsfera" step="0.01" value="2">
+
+        <!-- Nueva entrada para la longitud de la barra -->
+        <label for="longitudBarra"><b>Longitud de la Barra</b> (m):</label>
+        <input type="number" id="longitudBarra" step="0.01" value="1">
+
+        <!-- Nueva entrada para el radio de la esfera -->
+        <label for="radioEsfera"><b>Radio de la Esfera</b> (m):</label>
+        <input type="number" id="radioEsfera" step="0.01" value="0.1">
+        <button id="simulateBtn">Simular</button>
+    </div>
+
+    <!-- Sección para mostrar los resultados -->
+    <div id="output-section">
+        <h2 class="green">Resultados</h2>
+        <p>Amplitud (A): <span id="amplitude"></span></p>
+        <p>Fase Inicial (ϕ): <span id="phase"></span></p>
+        <footer>
+            <p>Create. by : Carlos Daza .</p>
+          </footer>
+    </div>
+
+ 
+    <script src="script.js"></script>
+</body>
+</html>
